@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/7eb03f9eb3.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav id="nav">
+        <div>
+            <h1 id="logo"><span id="highlight">S</span>hilok</h1>
+        </div>
+        <input type="checkbox" id="humbar">
+        <label for="humbar" class="humbar-btn-con">
+            <div class="humbar-btn"></div>
+        </label>
+        <ul id="item">
+            <div class="list-con">
+                <li class="list-item" ><a href="#nav">Home</a></li>
+                <li class="list-item"><a href="#about">About Us</a></li>
+                <li class="list-item"><a href="#services">Services</a></li>
+                <li class="list-item"><a href="#con-us">Contact Us</a></li>
+            </div>
+            <div class="nav-icons-con">
+                <a href="">
+                <i class="fa-brands fa-instagram nav-icons"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shilok-k-freelancer-320502256/" target="_blank">
+                    <i class="fa-brands fa-linkedin nav-icons"></i>
+                </a>
+            </div>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div id="home-down">
+            <h3 class="intro skill">Full Stack Developer</h3>
+            <h2 class="intro">Hi,I'm <span id="highlight1">Shilok</span></h1>
+                <h2 class="intro">Kumar from Pakistan</h3>
+                    <button class="btn"><a href="images/cv.png">CV</a></button>
+        </div>
+    </section>
+
+
+    <section id="about">
+        <div class="about2">
+            <img src="images/user.png" alt="">
+            <div class="about3">
+                <h2 id="about-me">About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure officiis cupiditate ducimus aperiam.
+                    Excepturi, veritatis nisi, consectetur totam ab dolores cumque optio, ipsa possimus quod dignissimos
+                    recusandae obcaecati odit perspiciatis? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'tab1')">Skills</button>
+                    <button class="tablinks" onclick="openTab(event, 'tab2')">Experience</button>
+                    <button class="tablinks" onclick="openTab(event, 'tab3')">Education</button>
+                </div>
+
+                <div id="tab1" class="tabcontent">
+                    <span class="span1">Web Development</span>
+                    <p>Web App Development/Web Dveelopment</p>
+                    <span class="span1">Graphic Designer</span>
+                    <p>Web Designer/Logo Designer</p>
+                </div>
+
+                <div id="tab2" class="tabcontent">
+                    <span class="span1">2023-current</span>
+                    <p>Learning Advance Of Web Development</p>
+                    <span class="span1">2022-2023</span>
+                    <p>Learning Basics Of Web Development</p>
+                    <span class="span1">2020-2022</span>
+                    <p>Learning Graphic Designing</p>
+                </div>
+
+                <div id="tab3" class="tabcontent">
+                    <span class="span1">2023</span>
+                    <p>Web Development Practice At Lyceum</p>
+                    <span class="span1">2022</span>
+                    <p>Learning Web Development At Lyceum</p>
+                    <span class="span1">2020-2022</span>
+                    <p>Learning Graphic Designing Form Oxford Islamabad</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="services">
+        <h3 id="ser-h3">My Services</h3>
+        <div id="large-box">
+            <div class="box">
+                <i class="fa-solid fa-code ser-icons ser-ele"></i>
+                <h4 class="ser-ele ser-h">Web Development</h4>
+                <p class="ser-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.voluptatem corrupti molestias
+                    ea soluta modi! Officiis, tenetur.</p>
+                <p class="ser-p ser-p1">Learn More</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-pen-nib ser-icons ser-ele"></i>
+                <h4 class="ser-ele ser-h">Web Design</h4>
+                <p class="ser-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.voluptatem corrupti molestias
+                    ea soluta modi! Officiis, tenetur.</p>
+                <p class="ser-p ser-p1">Learn More</p>
+            </div>
+            <div class="box">
+                <i class="fa-brands fa-app-store ser-icons ser-ele"></i>
+                <h4 class="ser-ele ser-h">App Development</h4>
+                <p class="ser-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.voluptatem corrupti molestias
+                    ea soluta modi! Officiis, tenetur.</p>
+                <p class="ser-p ser-p1">Learn More</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="con-us">
+        <h3 id="con-h3">Contact Us</h3>
+        <h6 class="con-h6"><i class="fa-solid fa-phone con-h6-icons"></i>0326-9237649</h6>
+        <h6 class="con-h6"><i class="fa-sharp fa-solid fa-paper-plane con-h6-icons"></i>coder8513@gmail.com</h6>
+        <div>
+            <i class="fa-brands fa-linkedin nav-icons"></i>
+            <i class="fa-brands fa-instagram nav-icons"></i>
+        </div>
+    </section>
+
+    <footer>
+        <h3 id="footer-h3">Copyright &#169; Shilok. Made By Shilok Kumar</h3>
+    </footer>
+
+</body>
+
+</html>

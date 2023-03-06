@@ -1,0 +1,225 @@
+@media screen and (min-width:1100px) and (max-width:1175px) {
+  #about p {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (min-width:1045px) and (max-width:1100px) {
+  .list-item {
+    padding: 17px;
+    font-size: 14px;
+  }
+
+  #about p {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (min-width:1000px) and (max-width:1045px) {
+  .list-item {
+    padding: 17px;
+    font-size: 14px;
+  }
+
+  #about p {
+    font-size: 1.0em;
+  }
+}
+
+#humbar {
+  display: none;
+
+}
+
+.humbar-btn-con {
+  position: absolute;
+  top: 7vh;
+  right: -15px;
+  display: none;
+  background-color: rgb(255, 0, 79);
+  ;
+  width: 30px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.humbar-btn,
+.humbar-btn::before,
+.humbar-btn::after {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.humbar-btn {
+  content: '';
+}
+
+.humbar-btn::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.humbar-btn::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#humbar:checked+.humbar-btn-con .humbar-btn {
+  background-color: rgba(000, 000, 000, 0);
+}
+
+#humbar:checked+.humbar-btn-con .humbar-btn::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#humbar:checked+.humbar-btn-con .humbar-btn::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media screen and (max-width:1000px) {
+  .humbar-btn-con {
+    display: flex;
+  }
+
+  #item {
+    position: absolute;
+    top: 0;
+    margin-top: 0px;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+  }
+
+  .list-con {
+    display: flex;
+    margin-top: 75px;
+    flex-direction: column;
+    background-color: rgb(255, 0, 79);
+    width: 200px;
+    border-top-left-radius: 20px;
+  }
+  
+  #humbar~#item li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition:all 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #humbar~#item .nav-icons-con {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition:all 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #humbar:checked~#item li {
+    margin: 0;
+    padding: 18px;
+    height: 30px;
+    align-self: flex-start;
+    transition:all 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #humbar:checked~#item .nav-icons-con {
+    margin: -3px 0px 0px 0px;
+    height: 10vh;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(255, 0, 79);
+    width: 200px;
+    height: 100%;
+    align-items: start;
+    transition:all 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    justify-content: flex-start;
+    display: flex;
+    
+  }
+  #humbar:not(:checked)~#item li,.nav-icons-con{
+    display: none;
+  }
+
+  .nav-icons-con {
+    background-color: rgb(255, 0, 79);
+  }
+
+  .fa-instagram {
+    margin-left: 1px;
+  }
+  
+  .nav-icons:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  .list-item a::after {
+    background-color: rgb(0, 0, 0);
+    
+  }
+  .list-item a{
+    animation: font 1s;
+  }
+  @keyframes font {
+    0%{
+      font-size: 0em;
+    }
+    100%{
+    font-size: 1.3em;
+    }
+  }
+  #nav,#home{
+    background-position:right;
+
+}
+#home-down{
+  margin-top: 10%;
+}
+.skill{
+  font-size: .5em;
+}
+.intro{
+  font-size: 2em;
+}
+
+}
+
+@media screen and (max-width:425px) {
+  #nav,#home{
+    background: url(images/phone-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:right;
+
+}
+
+html,body {
+  overflow-x: auto;
+  width: 99vw;
+  overflow-x: hidden;
+  
+}
+#home {
+  display: flex;
+  margin-left: 10px;
+
+}
+
+#logo{
+  margin-left: 20px;
+}
+
+.intro{
+  font-size: 1.6em;
+}
+.skill{
+  font-size: .8em;
+}
+#home-down{
+  margin-top: 25%;
+}
+}
